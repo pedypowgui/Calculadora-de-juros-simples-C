@@ -20,13 +20,13 @@ int main(void) {
     int cont = 0;
 
     printf("\n\n========== CALCULADORA DE JUROS SIMPLES ==========\n");
-    printf("Digite os valoros conforme solicitado.\n");
+    printf("Digite os valores conforme solicitado.\n");
     printf("Se não souber algum, digite 0.\n\n");
 
-    c = lerEntrada("Digite o valor do capital inicial (c): ", &cont);
-    i = lerEntrada("Digite o valor da taxa desse juros (i): ", &cont) / 100;
-    t = (int) lerEntrada("Digite o valor do tempo de aplicação desse juros(t): ", &cont);
-    j = lerEntrada("Digite o valor do juros(j): ", &cont);
+    c = lerEntrada("Digite o valor do capital inicial (c), em reais: ", &cont);
+    i = lerEntrada("Digite o valor da taxa do juros (i), em porcentagem: ", &cont) / 100;
+    t = (int) lerEntrada("Digite o valor do tempo de aplicação desse juros(t), em meses: ", &cont);
+    j = lerEntrada("Digite o valor do juros(j), em reais: ", &cont);
 
     //Mais de uma incognita, solução não possível
     if(cont > 1) {
